@@ -18,19 +18,19 @@ public class Config {
     @Bean
     public Actor actor1()
     {
-        return new Actor("Sabyasachi","male",22);
+        return new Actor("Mites","male",22);
     }
 
     @Bean
     public Actor actor2() {
-        return new Actor("Sabyasachi", "male", 22);
+        return new Actor("Haria", "male", 22);
     }
 
-    @Bean({"movie1","movie2"})
+   /* @Bean({"movie1","movie2"})
     @Scope("prototype")
     public Movie makeMovieObject()
     {
-        Movie movie =new Movie(actor());
+        Movie movie =new Movie();
         return movie;
-    }
+    }*/
 }

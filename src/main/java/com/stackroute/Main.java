@@ -16,7 +16,10 @@ public class Main {
 
         ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
         Movie mv=context.getBean("movie1", Movie.class);
-        mv.printAboutMovieActor();
+        //mv.printAboutMovieActor();
+        Movie mv1=context.getBean("movie2",Movie.class);
+        System.out.println(mv==mv1);
+
     }
 
 }

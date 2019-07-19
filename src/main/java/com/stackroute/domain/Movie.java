@@ -4,15 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component//This annotation will create an object of movie class
 public class Movie {
     private Actor actor;
 
-    public Movie() {
+    public Movie() {// default constructor for Movie class
     }
 
     @Autowired
-    public Movie(Actor actor) {
+    public Movie(Actor actor) {//Parameterised constructor for Movie class
         this.actor = actor;
     }
 
@@ -22,6 +22,6 @@ public class Movie {
 
     public void printAboutMovieActor()
     {
-        actor.printActor();
+        actor.printActor();//Printing Actor description
     }
 }

@@ -13,7 +13,7 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
     public static void main(String[] args) {
-
+        //Bean creation using annotation based configuration
         ApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
         Movie mv=context.getBean("movie1", Movie.class);
         mv.printAboutMovieActor();

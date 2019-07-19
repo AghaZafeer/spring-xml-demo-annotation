@@ -5,35 +5,35 @@ import org.springframework.stereotype.Component;
 
 //@Component
 public class Actor {
-
+    //actor fields
     private String name;
     private String gender;
     private int age;
 
-    public Actor() {
+    public Actor() {//Default constructor
 
     }
 
-    public Actor(String name, String gender, int age) {
+    public Actor(String name, String gender, int age) {//Parameterised constructor
         this.name = name;
         this.gender = gender;
         this.age = age;
     }
 
-    public void setName(String name) {
+    public void setName(String name) {//setter for name
         this.name = name;
     }
 
-    public void setGender(String gender) {
+    public void setGender(String gender) {//setter for gender
         this.gender = gender;
     }
 
-    public void setAge(int age) {
+    public void setAge(int age) {//setter for age
         this.age = age;
     }
 
     public void printActor()
-    {
+    {   //Print Actor description
         System.out.println("Actor's Name:"+name+"\n"+"Gender:"+gender+"\n"+"Age:"+age);
     }
 

@@ -14,32 +14,32 @@ import org.springframework.stereotype.Component;
 public class Movie implements ApplicationContextAware, BeanFactoryAware, BeanNameAware {
     private Actor actor;
 
-    public Movie() {
+    public Movie() {//default constructor
     }
 
     @Autowired
-    public Movie(Actor actor) {
+    public Movie(Actor actor) {//Parameterised constructor
         this.actor = actor;
     }
 
-    public void setActor(Actor actor2) {
+    public void setActor(Actor actor2) {//Setting Actor object
         this.actor = actor2;
     }
 
     public void printAboutMovieActor()
     {
-        actor.printActor();
+        actor.printActor();//Print Actor description
     }
 
-    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {//print beanfactory configuration
         System.out.println(beanFactory);
     }
 
     public void setBeanName(String s) {
-        System.out.println(s);
+        System.out.println(s);//print bean name
     }
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        System.out.println(applicationContext);
+        System.out.println(applicationContext);//print Applicationcontext configuration
     }
 }

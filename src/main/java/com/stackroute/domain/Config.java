@@ -11,6 +11,7 @@ public class Config {
     @Bean
     public Actor actor()
     {
+        //Creation of Actor object
         Actor actor =new Actor();
         actor.setAge(22);
         actor.setGender("male");
@@ -19,7 +20,7 @@ public class Config {
     }
     @Bean("movie1")
     public Movie makeMovieObject()
-    {
+    {   //Creation of Movie object
         Movie movie =new Movie(actor());
         return movie;
     }

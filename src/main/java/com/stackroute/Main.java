@@ -13,13 +13,13 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
     public static void main(String[] args) {
-
+        //Creating two beans using annotation based configuration
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(Config.class);
         context.scan("com.stackroute");
         Movie mv=context.getBean("movie", Movie.class);
         mv.printAboutMovieActor();
         Movie mv1=context.getBean("movie",Movie.class);
-        System.out.println(mv==mv1);
+        System.out.println(mv==mv1);//Checking if the references to the 2 beans are same or not
 
     }
 

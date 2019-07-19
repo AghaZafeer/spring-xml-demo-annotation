@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Scope;
 //@ComponentScan(basePackages = "com.stackroute")
 public class Config {
 
+    
+    //Creating 3 Actor Objects
     @Bean
     public Actor actor()
     {
